@@ -1,0 +1,468 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body {
+  background: #f7f7f7;
+  box-sizing: border-box;
+  width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    margin: auto;
+    
+}
+
+.background-img{
+    margin: auto;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+}
+.audio-wrapper{
+    margin: 0 auto;
+    text-align: center;
+}
+.container{
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+    height: 580px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin: -250px 0 0 -210px;
+    background: linear-gradient(90deg, rgba(10,10,15,1) 0%, rgba(203,203,208,1) 69%, rgba(174,187,190,1) 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 6px rgb(10, 10, 10);
+    
+}
+
+.audio-img{
+    background-image: url('assets/img/lemonade.png');
+    max-width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.play_btn{
+    transition: 0.5s;
+    max-width:55px;
+    cursor: pointer;
+    color: black;
+}
+.play_btn:hover {
+    transition: 0.5s;
+   opacity: 0.5;
+}
+.prew{
+    transition: 0.5s;
+    color: black;
+    max-width:35px;
+    cursor: pointer;
+}
+.prew:hover{
+    transition: 0.5s;
+    opacity: 0.5;
+}
+.next:hover{
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.next{
+    transition: 0.5s;
+    color: black;
+    max-width:35px;
+    cursor: pointer;
+}
+.song-name{
+    font-family:Montserrat;
+    font-size: 20px;
+}
+.sub_name{
+    margin-top: -15px;
+    font-family:Montserrat;
+    font-size: 10px;
+    white-space: pre;           
+    white-space: pre-wrap;      
+    white-space: pre-line;      
+    white-space: -pre-wrap;     
+    white-space: -o-pre-wrap;   
+    white-space: -moz-pre-wrap; 
+    white-space: -hp-pre-wrap;  
+    word-wrap: break-word;     
+    max-width: 140px;
+}
+
+.audio-controlls{
+    height: 100px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.progress-bar-block{
+    height: 30px;
+}
+
+  .volumeSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80px;
+    background: transparent;
+  }
+  
+  .volumeSlider:focus {
+    outline: none;
+  }
+  
+  .volumeSlider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: #000000;
+      cursor: pointer;
+      margin-top: -6px;
+      border-top: #bbc 2px solid;
+      border-left: #ccd 2px solid;
+      border-right: #aab 2px solid;
+      border-bottom: #bbc 2px solid;
+  }
+
+  .volumeSlider::-webkit-slider-thumb:hover{
+    transition: 1s;
+    opacity: 0.8;
+  }
+  
+  .volumeSlider::-webkit-slider-thumb:active {
+      background-color: #9aa;
+  }
+  .volumeSlider::-moz-range-thumb {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: #69727B;
+      cursor: pointer;
+      margin-top: -6px;
+      border-top: #bbc 2px solid;
+      border-left: #ccd 2px solid;
+      border-right: #aab 2px solid;
+      border-bottom: #bbc 2px solid;
+  }
+  
+  .volumeSlider::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 8px;
+      cursor: pointer;
+      background-color:#8B949D;
+      border-radius: 4px;
+      margin-top: 2px;
+  }
+  .volumeSlider::-webkit-slider-runnable-track:active {
+      background-color: #69727B;
+  }
+  
+  .volumeSlider::-moz-range-track {
+      width: 100%;
+      height: 8px;
+      cursor: pointer;
+      background-color:#8B949D;
+      border-radius: 4px;
+      margin-top: 2px;
+  }
+  
+
+
+
+  .progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 300px;
+    background: transparent;
+  }
+  
+  .progress-bar:focus {
+    outline: none;
+  }
+  
+  .progress-bar::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: #070808;
+      cursor: pointer;
+      margin-top: -6px;
+      border-top: #bbc 2px solid;
+      border-left: #ccd 2px solid;
+      border-right: #aab 2px solid;
+      border-bottom: #bbc 2px solid;
+  }
+  
+  .progress-bar::-webkit-slider-thumb:hover{
+    transition: 1s;
+    opacity: 0.8;
+  }
+
+  .progress-bar::-webkit-slider-thumb:active {
+      background-color: #9aa;
+  }
+  .progress-bar::-moz-range-thumb {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: #69727B;
+      cursor: pointer;
+      margin-top: -6px;
+      border-top: #bbc 2px solid;
+      border-left: #ccd 2px solid;
+      border-right: #aab 2px solid;
+      border-bottom: #bbc 2px solid;
+  }
+  
+  .progress-bar::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 8px;
+      cursor: pointer;
+      background-color:#8B949D;
+      border-radius: 4px;
+      margin-top: 2px;
+  }
+  .progress-bar::-webkit-slider-runnable-track:active {
+      background-color: #69727B;
+  }
+  
+  .progress-bar::-moz-range-track {
+      width: 100%;
+      height: 8px;
+      cursor: pointer;
+      background-color:#8B949D;
+      border-radius: 4px;
+      margin-top: 2px;
+  }
+
+  .music-duration{
+      font-family: monospace;
+  }
+
+  .timer-music{
+    font-family: monospace;
+  }
+
+  .volum_control{
+      margin-left: 250px;
+      display: flex;
+  }
+
+  .github{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 50px;
+      z-index: 5;
+      background-color: black;
+      border-radius: 10px;
+  }
+
+.iconsss{
+    width: 50px;
+    z-index: 5;
+    background-color: black;
+    color: black;
+    border-radius: 30px;
+}
+
+.icons{
+    width: 100px;
+    z-index: 5;
+    color: black;
+    border-radius: 30px;
+}
+
+.rsschool{
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    max-width: 150px;
+    z-index: 5;   
+}
+
+.serch_block{
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    max-width: 150px;
+    z-index: 5;
+}
+
+.input_label{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: 700;
+    color: #f7f7f7;
+}
+
+.search{
+    font-family: 'Montserrat';
+    height: 30px;
+    width: 200px;
+    border: 2px rgb(97, 87, 87) solid;
+    border-radius: 10px;
+}
+
+.error{
+    position: absolute;
+    top: 10px;
+    right: 600px;
+    max-width: 300px;
+    z-index: 5; 
+    max-width: 300px;
+    color: #af0000;
+    font-weight: 900;
+}
+
+.search_btn{
+    margin-top: 20px;
+    border:#000000 2px solid;
+}
+
+
+.search_btn{
+    display: inline-block;/* отображать как строчно-блочный элемент*/
+             text-decoration: none;/* убираем дефолтное подчеркивание у ссылки*/
+             font-family:'Montserrat';/*название шрифта*/
+    text-transform: uppercase;/*трансформация в заглавные буквы */
+    font-weight: 900;/*толщина шрифта*/
+    color: #fff;/*цвет текста на кнопке*/
+    font-size: 20px;/*размер шрифта*/
+    background-color: rgb(65, 65, 65);/* цвет кнопки */
+    padding: 20px 60px;/* расстояние от текста до края кнопки */
+    position: relative;/* относительное позиционирование */
+    border-radius: 10px;/* радиус скругления углов*/
+    overflow: hidden;/* спрятать все лишнее за пределами кнопки*/
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.search_btn:before {
+    content: ""; /* отображает псевдоэлемент */
+    position: absolute; /* абсолютное позиционирование */
+    top: 0; /* верхняя координата */
+    left: 0; /* левая координата */
+    width: 2em; /* относительная ширина */
+    height: 100%; /* высота как у оригинала */
+    background-color: rgba(255, 255, 255, 0.3); /* белый цвет с полупрозрачностью */
+}
+
+.search_btn:hover:before {
+    animation: moveLight 0.5s;
+}
+
+         @keyframes moveLight {
+from {
+    transform: translateX(-4em) skewX(-45deg);
+}
+to {
+    transform: translateX(10em) skewX(-45deg);
+}
+}
+
+
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left:47%;
+    display: block;
+    z-index: 9;
+  }
+  .lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+  }
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: rgb(245, 173, 173);
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
